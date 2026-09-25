@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="500" height="500">
+  <defs>
+    <linearGradient id="globeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E7D32" />
+      <stop offset="100%" stop-color="#0F5132" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A5D6A7" />
+      <stop offset="100%" stop-color="#2E7D32" />
+    </linearGradient>
+  </defs>
+
+  <!-- Central Globe -->
+  <circle cx="50" cy="50" r="26" fill="url(#globeGrad)" />
+
+  <!-- Continent / Land detail overlay -->
+  <path d="M 32,42 C 35,36 42,34 46,38 C 50,42 56,38 60,40 C 65,42 68,48 68,54 C 64,52 60,56 54,54 C 48,52 42,58 38,54 C 34,50 30,46 32,42 Z" fill="#A5D6A7" opacity="0.85" />
+
+  <!-- Orbiting Ring System -->
+  <path d="M 18,62 C 12,50 20,32 40,24 C 60,16 80,22 84,34 C 88,44 80,60 62,68 C 44,76 22,72 18,62 Z" fill="none" stroke="url(#ringGrad)" stroke-width="5.5" stroke-linecap="round" />
+  
+  <!-- Satellite / Small Orbit Node -->
+  <circle cx="78" cy="30" r="4.5" fill="#A5D6A7" />
+</svg>
